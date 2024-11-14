@@ -2,10 +2,10 @@
  import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Write a Review', href: '#', current: false },
-  { name: 'Categories', href: '#', current: false },
-  { name: 'Blog', href: '#', current: false },
-  { name: 'Login', href: '#', current: false },
+  { name: 'Write a Review', href: '/', current: false },
+  { name: 'Categories', href: '/categories', current: false },
+  { name: 'Blog', href: '/blog', current: false },
+  { name: 'Login', href: '/login', current: false },
 ];
 
 function classNames(...classes) {
@@ -22,7 +22,7 @@ export default function Navbar() {
               {/* Logo Section */}
               <div className="flex items-center">
                 <img
-                  src="/path/to/logo.png" // Replace with actual logo path
+                  src="/path/to/logo.png" 
                   alt="TrustPilot Logo"
                   className="h-8 w-auto"
                 />
