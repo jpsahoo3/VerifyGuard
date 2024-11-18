@@ -18,7 +18,7 @@ const SearchBar = () => {
 
       const apiKey=process.env.REACT_APP_API_KEY;
       
-      // Step 1: Submit the URL for scanning
+      // Submit the URL for scanning
       const submissionResponse = await axios.post(
         'https://www.virustotal.com/api/v3/urls',
         { url: encodedURL },
@@ -32,7 +32,7 @@ const SearchBar = () => {
 
       const analysisUrl = submissionResponse.data.data.id;
 
-      // Step 2: Retrieve the scan results
+      // Retrieving the scan results
       const analysisResponse = await axios.get(
         `https://www.virustotal.com/api/v3/analyses/${analysisUrl}`,
         {
