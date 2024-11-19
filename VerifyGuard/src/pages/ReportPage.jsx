@@ -7,7 +7,7 @@ const ReportPage = () => {
   const { url, result } = location.state || {};
 
   if (!url || !result) {
-    return <div className="p-4">No data available.</div>;
+    return <div className="p-4">No data available. </div>;
   }
 
   return (
