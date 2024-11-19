@@ -16,7 +16,7 @@ const SearchBar = () => {
       // Encode the URL for VirusTotal
       const encodedURL = encodeURIComponent(url);
 
-      const apiKey=process.env.REACT_APP_API_KEY;
+      const apiKey=process.env.VIRUSTOTAL_API_KEY;
       
       // Submit the URL for scanning
       const submissionResponse = await axios.post(
